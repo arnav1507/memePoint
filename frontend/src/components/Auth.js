@@ -31,7 +31,7 @@ const Auth = () => {
 
   const sendRequest = async (type = "login") => {
     const res = await axios
-      .post(`https://memepoint.herokuapp.com/api/user/${type}`, {
+      .post(`https://memepoint.onrender.com/api/user/${type}`, {
         name: inputs.name,
         email: inputs.email,
         password: inputs.password,

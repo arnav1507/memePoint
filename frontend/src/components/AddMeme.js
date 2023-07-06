@@ -27,7 +27,7 @@ const AddMeme = () => {
   };
   const sendRequest = async () => {
     const res = await axios
-      .post("https://memepoint.herokuapp.com/api/blog/add", {
+      .post("https://memepoint.onrender.com/api/blog/add", {
         title: inputs.title,
         description: inputs.description,
         image: inputs.imageURL,

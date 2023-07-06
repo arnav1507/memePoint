@@ -25,7 +25,7 @@ const BlogDetail = () => {
   };
   const fetchDetails = async () => {
     const res = await axios
-      .get(`https://memepoint.herokuapp.com/api/blog/${id}`)
+      .get(`https://memepoint.onrender.com/api/blog/${id}`)
       .catch((err) => console.log(err));
     const data = await res.data;
     return data;
@@ -42,7 +42,7 @@ const BlogDetail = () => {
   }, [id]);
   const sendRequest = async () => {
     const res = await axios
-      .put(`https://memepoint.herokuapp.com/api/blog/update/${id}`, {
+      .put(`https://memepoint.onrender.com/api/blog/update/${id}`, {
         title: inputs.title,
         description: inputs.description,
         image: inputs.imageURL,
